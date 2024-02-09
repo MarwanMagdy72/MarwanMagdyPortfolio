@@ -114,7 +114,7 @@ const NavBar = () => {
           <ul className="pop-up-content rounded-5 mx-auto mt-5 py-4 px-5">
             <div className="close-pop-up text-end" onClick={closeModal}>
               {" "}
-              <i className="fa-solid fa-xmark"></i>{" "}
+              <i className="fa-solid fa-xmark close-icon"></i>{" "}
             </div>
             <li>
               <NavLink to={"/"} onClick={closeModal}>

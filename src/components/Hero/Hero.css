@@ -44,7 +44,6 @@ section .subtitle {
 /* 6. Social Links Section */
 section .social-links {
   margin-block: 30px;
-
 }
 section .social-links li {
   transition: 0.3s;
@@ -56,44 +55,50 @@ section .social-links li a {
 }
 
 section .social-links li:hover {
-
- transform: scale(1.25);
+  transform: scale(1.25);
 }
 section .social-links li:hover a {
-
-color: var(--title-color);
+  color: var(--title-color);
 }
 @media (max-width: 1000px) {
-.hero-section{
+  .hero-section {
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-
-}
-.hero-animation{
-    width: 80%!important;
-}
-.hero-info {
+  }
+  .hero-animation {
+    width: 80% !important;
+  }
+  .hero-info {
     width: 100% !important;
-}
-.hero-section .title{
+  }
+  .hero-section .title {
     width: 100% !important;
+  }
 }
 
+@media (max-width: 400px) {
+  section .social-links {
+    width: 80% !important;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px !important;
+  }
+
+  section .profile-image {
+    width: 50% !important;
+  }
 }
-
-
 
 @media (max-width: 375px) {
-
-.hero-animation{
-    width: 100%!important;
-}
-.hero-section .title{
+  .hero-animation {
     width: 100% !important;
-}
-.profile-image{
+  }
+  .hero-section .title {
+    width: 100% !important;
+  }
+  .profile-image {
     width: 70% !important;
-}
+  }
 }

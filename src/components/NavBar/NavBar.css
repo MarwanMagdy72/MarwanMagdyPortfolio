@@ -52,6 +52,9 @@ header .pop-up {
   backdrop-filter: blur(9px);
   z-index: 99999 !important;
 }
+header .pop-up .close-icon {
+  color: var(--title-color);
+}
 /*  Pop-up Modal Animation  */
 @keyframes open-modal {
   0% {

@@ -26,7 +26,7 @@ const Hero = () => {
             your dynamic projects.
           </p>
 
-          <ul className="social-links d-flex gap-5">
+          <ul className="social-links   d-flex   gap-5">
             <li>
               <a
                 href="https://www.linkedin.com/in/marwan-magdy72"
