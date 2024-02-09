@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none !important;
+  box-sizing: border-box;
+}
+::selection {
+  color: #272424;
+  background-color: rgb(112, 113, 114);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --primary-color: #000000;
+  --secondary-color: rgba(24, 24, 27, 0.6);
+  --navbar-bg: rgb(40 40 40);
+  --input-bg: rgb(20 40 32);
+  --title-color: rgb(220, 250, 222);
+  --subtitle: rgba(255, 255, 255, 0.5);
+  --border: 1px solid rgba(255, 255, 255, 0.1);
+  --border-active-projects-button: 1px solid rgba(1, 1, 200, 0.2);
+  --button-bg: rgb(40 40 35);
+  --placeholder-color: rgb(177, 177, 177);
+  --projects-active-button-bg: rgba(42, 10, 59, 0.658);
+  --shadow: 2px 2px 20px #111;
+  --scroll-btn-color: #817676;
+  --scroll-btn-hover: #aaa5a5;
+  --color-card-animation-border: #bbbbff;
+}
+
+/* customize light mode colors */
+.light {
+  --primary-color: rgb(185, 185, 185);
+  --secondary-color: rgb(192, 190, 190);
+  --navbar-bg: rgb(214, 212, 212);
+  --shadow: 2px 2px 20px #807575;
+  --title-color: rgb(20, 24, 20);
+  --subtitle: rgb(54, 42, 42);
+  --input-bg: rgb(156, 179, 170);
+  --button-bg: rgb(165, 165, 149);
+  --placeholder-color: rgb(0, 0, 0);
+  --border: 1px solid rgba(73, 73, 73, 0.295);
+  --shadow: 2px 2px 20px #858080;
+  --scroll-btn-color: #444141;
+  --scroll-btn-hover: #504f4f;
+  --projects-active-button-bg: rgba(27, 4, 39, 0.808);
+  --border-active-projects-button: 1px solid rgba(17, 17, 20, 0.2);
+  --button-bg: rgb(82, 82, 80);
+  --color-card-animation-border: #363636;
+}
+body {
+  background-color: var(--primary-color);
+  color: #ddd9d9;
+}
+.container {
+  border: var(--border);
+  width: 80%;
+  background-color: var(--secondary-color);
+  box-shadow: var(--shadow);
+}
+.app {
+  min-height: 100vh !important;
+  display: flex;
+  flex-direction: column;
+}
+button {
+  all: unset;
+}
+.active {
+  color: var(--title-color) !important;
+}
+.scroll-to-top-btn {
+  width: 85%;
+  border: 5px solid rgb(85, 139, 110);
+  border-radius: 50%;
+}
+.whatsapp-icon {
+  width: 8.5rem;
+}
+
+.fixed-icons {
+  position: fixed;
+  bottom: 1rem;
+  right: 4%;
+  transition: 0.3s;
+  width: 4%;
+  transition: 0.5s all;
+}
+.scroll-to-top-btn:hover {
+  color: var(--scroll-btn-hover);
+}
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+
+  .scroll-to-top-btn {
+    width: 80%;
+  }
+
+  .fixed-icons {
+    right: 12px;
+    bottom: 40px;
+
+    width: 10%;
+  }
+  .whatsapp-icon {
+    width: 5.5rem;
+  }
+}
+
+/* Works for Webkit (Chrome, Safari, Opera) */
+::-webkit-scrollbar {
+  width: 0.8rem; /* width of the entire scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #3d3535; /* color of the tracking area */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #817676; /* color of the scrollbar */
+  border-radius: 5px; /* roundness of the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #706060; /* color of the scrollbar on hover */
+}

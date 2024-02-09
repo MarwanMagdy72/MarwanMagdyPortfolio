@@ -1,0 +1,122 @@
+/* 
+====================
+Table of Contents
+====================
+1. Header Navigation Styles
+2. Header Button Styles
+3. Pop-up Modal Styles
+4.  Pop-up Modal Animation 
+5. Pop-up Content Styles
+6. Media Queries
+*/
+
+/* Header Navigation Styles */
+header nav ul.nav-links {
+  background-color: var(--navbar-bg);
+  box-shadow: var(--shadow);
+}
+
+header nav ul.nav-links a {
+  color: var(--subtitle);
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+/* Header Button Styles */
+header button.menu-icon,
+header button.theme-icon {
+  font-size: 2rem;
+
+  border-radius: 50% !important;
+  width: 60px;
+  height: 60px;
+  border: var(--border);
+
+  text-align: center;
+}
+
+header button.menu-icon {
+  display: none;
+}
+.light-mood-icon {
+  color: rgb(255, 255, 51);
+}
+
+/* Pop-up Modal Styles */
+header .pop-up {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(24, 26, 35, 0.7);
+  backdrop-filter: blur(9px);
+  z-index: 99999 !important;
+}
+/*  Pop-up Modal Animation  */
+@keyframes open-modal {
+  0% {
+    transform: translateX(-100%) scale(0) rotate(-30deg);
+  }
+  75% {
+    transform: translateX(0) scale(1.2) rotate(0deg);
+  }
+  100% {
+    transform: translateX(0) scale(1) rotate(0deg);
+  }
+}
+
+header .pop-up-content {
+  background-color: var(--navbar-bg);
+  width: 90%;
+  animation: open-modal 0.4s;
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: var(--border);
+}
+
+/* Pop-up Content Styles */
+header ul.pop-up-content li a {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--subtitle);
+  transition: 0.3s all;
+}
+
+header ul.pop-up-content li a:hover,
+header nav ul.nav-links a:hover {
+  color: var(--title-color);
+}
+
+header ul.pop-up-content li:not(:last-child) {
+  border-bottom: var(--border);
+  margin-bottom: 1rem;
+}
+
+header ul.pop-up-content .close-pop-up i {
+  font-size: 1.5rem;
+  transition: all 0.3s;
+}
+
+header ul.pop-up-content .close-pop-up i:hover {
+  transform: scale(1.3) rotate(180deg);
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.1);
+}
+
+/* Media Queries */
+@media (max-width: 890px) {
+  header button.menu-icon {
+    display: block;
+  }
+  header nav {
+    display: none;
+  }
+}
+
+@media (min-width: 891px) {
+  header .pop-up {
+    display: none;
+  }
+}

@@ -1,0 +1,180 @@
+/*
+====================
+Table of Contents
+====================
+ 1. Main Section Styles 
+ 2. Project Card Styles 
+ 3. Project Buttons Styles 
+ 4. Responsive Styles 
+ 
+ */
+
+/* 
+====================
+1. Main Section Styles
+====================
+ */
+main {
+  border-bottom: var(--border);
+  padding-block: 40px;
+}
+
+/* 
+====================
+ 2. Project Card Styles 
+====================
+ */
+
+main article.project-card {
+  border: var(--border);
+  border-top: none;
+  min-height: 370px !important;
+  max-height: 400px !important;
+  border-radius: 8px;
+  transition: 0.3s;
+  padding-bottom: 1.2rem;
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0.05)
+  );
+  box-shadow: var(--shadow);
+}
+
+main article.project-card .project-img {
+  width: 100% !important;
+  border-radius: 5px;
+}
+
+main article.project-card:hover {
+  cursor: pointer;
+  scale: 1.1;
+  rotate: 1.2deg;
+}
+
+main .project-card .card-body {
+  padding-inline: 1rem;
+}
+
+main .project-card .card-body .project-title {
+  text-transform: capitalize;
+  font-weight: 700;
+  padding-block: 0.6rem;
+  font-size: 1.51rem;
+  color: var(--title-color);
+}
+
+main .project-card .card-body .project-subtitle {
+  width: 100%;
+  font-size: 0.9rem;
+  color: var(--subtitle);
+}
+
+main .project-card .card-body .card-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main .project-card .card-body .card-links .project-links a {
+  font-size: 1.2rem;
+  color: var(--subtitle);
+  transition: 0.3s;
+}
+
+main .project-card .card-body .card-links .project-links a:hover {
+  font-size: 1.29rem;
+  color: var(--title-color);
+}
+
+main .project-card .card-body .card-links .more-link a {
+  font-size: 1.2rem;
+  color: var(--title-color);
+  transition: 0.3s;
+  display: flex;
+  font-weight: 600;
+}
+
+main .project-card .card-body .card-links .more-link a i {
+  align-self: end;
+  margin-left: 5px;
+  margin-bottom: 2px;
+}
+
+main .project-card .card-body .card-links .more-link a:hover {
+  color: var(--subtitle);
+}
+
+/* 
+====================
+ 3. Project Buttons Styles 
+====================
+ */
+
+main .project-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+main .project-buttons button {
+  width: 14rem;
+  font-size: 1.3rem;
+  padding-block: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 2.5px;
+  background-color: var(--button-bg);
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+main .project-buttons button.active-btn {
+  border: var(--border-active-projects-button);
+  background-color: var(--projects-active-button-bg) !important;
+  opacity: 1;
+  font-weight: 700;
+}
+
+main .project-buttons button:hover {
+  opacity: 1;
+  font-weight: 700;
+}
+
+/* 
+====================
+4. Responsive Styles 
+====================
+ */
+
+@media (max-width: 1100px) {
+  main .main-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  main .projects {
+    width: 100%;
+  }
+
+  main .main-content .project-buttons {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    flex-wrap: wrap;
+    gap: 15px !important;
+  }
+
+  main .project-buttons button {
+    width: 13rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 769px) {
+  main .project-buttons button {
+    width: 95%;
+    font-size: 1.1rem;
+  }
+}

@@ -1,0 +1,155 @@
+/*
+====================
+Table of Contents
+====================
+ 1. Contact Section Styles
+ 2. Header Styles 
+ 3. Form Content Styles 
+ 4. Input and Textarea Styles 
+ 5. Button Styles 
+ 6. Responsive Styles 
+ */
+
+/* 
+====================
+1. Contact Section Styles
+====================
+ */
+section.contact-section {
+  padding: 50px;
+}
+
+/* 
+  
+====================
+2.Header Styles
+====================
+   */
+
+header .section-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--title-color);
+  margin-bottom: 1.3rem;
+  display: flex;
+  align-items: center;
+}
+
+header .section-title i {
+  color: var(--subtitle);
+  margin-right: 1.2rem;
+  font-size: 2.7rem;
+}
+
+header .section-subtitle {
+  color: var(--subtitle);
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* 
+====================
+3. Form Content Styles
+====================
+ */
+section form .form-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  width: 100% !important;
+}
+
+/* 
+====================
+4. Input and Textarea Styles 
+====================
+*/
+section form .form-content label {
+  margin-right: 1.1rem;
+  font-size: 1.1rem;
+  color: var(--subtitle);
+}
+
+section form .form-content input,
+section form .form-content textarea {
+  all: unset;
+  background-color: var(--input-bg);
+  border-radius: 5px;
+  border: var(--border);
+  padding: 0.4rem 1rem;
+  resize: both;
+  transition: 0.3s;
+  width: 90%;
+}
+
+section form .form-content textarea {
+  min-height: 10rem;
+  max-width: 50rem;
+}
+
+section form .form-content input:hover,
+section form .form-content textarea:hover,
+section form .form-content input:focus,
+section form .form-content textarea:focus {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+section form .form-content input::placeholder,
+section form .form-content textarea::placeholder {
+  color: var(--placeholder-color);
+}
+/* 
+====================
+5. Button Styles
+====================
+ */
+section form .form-content button {
+  background-color: var(--submit-button-bg);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-align: center;
+  border: var(--border);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--subtitle);
+  width: 20%;
+  transition: 0.3s;
+}
+
+section form .form-content button:hover {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: rgb(70 70 40);
+  scale: 1.05;
+}
+
+/*
+
+====================
+6. Responsive Styles 
+====================
+*/
+@media (max-width: 1000px) {
+  section .contact-animation {
+    display: none;
+  }
+
+  section form .form-content button {
+    width: 90%;
+  }
+  section form .form-content textarea {
+    resize: vertical;
+  }
+  header,
+  h1 {
+    text-align: center;
+    justify-content: center;
+  }
+
+  section form .form-content {
+    width: 100%;
+  }
+
+  section.contact-section {
+    padding: 0px 0px;
+  }
+}

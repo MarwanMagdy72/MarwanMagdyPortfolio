@@ -1,0 +1,99 @@
+/* 
+====================
+Table of Contents
+====================
+1. Section Border
+2. Profile Image Styling
+3. Hero Information Styling
+4. Title Styling
+5. Subtitle Styling
+6. Social Links Section
+*/
+
+/* 1. Section Border */
+section {
+  border-bottom: var(--border);
+}
+
+/* 2. Profile Image Styling */
+section .profile-image {
+  width: 28%;
+  border: 1px solid #afafaf;
+  border-radius: 50%;
+  box-shadow: var(--shadow);
+}
+
+/* 3. Hero Information */
+section .hero-info {
+  padding-left: 5%;
+}
+
+/* 4. Title Styling */
+section .title {
+  font-weight: 700;
+  color: var(--title-color);
+  margin-bottom: 20px;
+}
+
+/* 5. Subtitle Styling */
+section .subtitle {
+  color: var(--subtitle);
+  margin-block: 10px;
+}
+
+/* 6. Social Links Section */
+section .social-links {
+  margin-block: 30px;
+
+}
+section .social-links li {
+  transition: 0.3s;
+}
+section .social-links li a {
+  color: var(--subtitle);
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+
+section .social-links li:hover {
+
+ transform: scale(1.25);
+}
+section .social-links li:hover a {
+
+color: var(--title-color);
+}
+@media (max-width: 1000px) {
+.hero-section{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+
+}
+.hero-animation{
+    width: 80%!important;
+}
+.hero-info {
+    width: 100% !important;
+}
+.hero-section .title{
+    width: 100% !important;
+}
+
+}
+
+
+
+@media (max-width: 375px) {
+
+.hero-animation{
+    width: 100%!important;
+}
+.hero-section .title{
+    width: 100% !important;
+}
+.profile-image{
+    width: 70% !important;
+}
+}

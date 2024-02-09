@@ -1,0 +1,17 @@
+.skills li{
+    background-color: var( --secondary-color);
+    color: var(--title-color);
+    border: var(--border);
+}
+.skills .header{
+    color: var(--title-color);
+}
+.skills .subtitle{
+    color: var(--subtitle);
+}
+
+@media (max-width: 770px) {
+.skills .soft-skills {
+  margin-top: 2rem;
+}
+}

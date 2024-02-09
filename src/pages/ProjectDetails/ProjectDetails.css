@@ -1,0 +1,30 @@
+.slider-image-wrapper img {
+  max-width: 100%;
+  max-height: 600px;
+}
+.awssld__content {
+  background: none !important;
+}
+.project-details .project-links a {
+  font-size: larger;
+  color: var(--subtitle);
+}
+.project-details .about-project {
+  margin-block: 5rem;
+  color: var(--subtitle);
+}
+.project-details .about-project .list-group-item {
+  background: none !important;
+  color: var(--subtitle);
+}
+.about-project .project-pages h3,
+.about-project .project-title h1,
+.about-project .project-title h1,
+.about-project .key-features h3 {
+  color: var(--title-color);
+}
+@media screen and (max-width: 800px) {
+  .project-details .about-project {
+    padding: 0 !important;
+  }
+}
