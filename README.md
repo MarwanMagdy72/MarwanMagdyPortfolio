@@ -4,7 +4,7 @@ This is a personal portfolio website built using React.js, Bootstrap, and Lottie
 
 ## Demo
 
-Check out the live demo [here](https://marwanmagdyportfolio.onrender.com/).
+Check out the live demo [Demo](https://marwanmagdyportfolio.onrender.com/).
 
 
 ## Features
