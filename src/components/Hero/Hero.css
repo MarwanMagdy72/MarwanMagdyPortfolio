@@ -85,6 +85,9 @@ section .social-links li:hover a {
     justify-content: center;
     margin-left: 10px !important;
   }
+  section .social-links li a {
+    font-size: 1.3rem;
+  }
 
   section .profile-image {
     width: 50% !important;

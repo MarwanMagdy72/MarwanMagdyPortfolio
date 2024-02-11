@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -13,9 +14,10 @@
 html {
   scroll-behavior: smooth;
 }
+
 :root {
   --primary-color: #000000;
-  --secondary-color: rgba(24, 24, 27, 0.6);
+  --secondary-color: rgba(24, 24, 27, 0.65);
   --navbar-bg: rgb(40 40 40);
   --input-bg: rgb(20 40 32);
   --title-color: rgb(220, 250, 222);
@@ -29,12 +31,13 @@ html {
   --scroll-btn-color: #817676;
   --scroll-btn-hover: #aaa5a5;
   --color-card-animation-border: #bbbbff;
+  --bg-image: url(/public/dark-stars.gif) ;
 }
 
 /* customize light mode colors */
 .light {
-  --primary-color: rgb(185, 185, 185);
-  --secondary-color: rgb(192, 190, 190);
+  --primary-color: rgb(138, 138, 138);
+  --secondary-color: rgba(192, 190, 190, 0.514);
   --navbar-bg: rgb(214, 212, 212);
   --shadow: 2px 2px 20px #807575;
   --title-color: rgb(20, 24, 20);
@@ -50,10 +53,13 @@ html {
   --border-active-projects-button: 1px solid rgba(17, 17, 20, 0.2);
   --button-bg: rgb(82, 82, 80);
   --color-card-animation-border: #363636;
+  --bg-image: url(/public/light-stars.gif) ;
 }
 body {
   background-color: var(--primary-color);
   color: #ddd9d9;
+  font-family: "Roboto Condensed", sans-serif !important;
+  background-image: var(--bg-image)!important;
 }
 .container {
   border: var(--border);

@@ -32,10 +32,11 @@ main article.project-card {
   max-height: 400px !important;
   border-radius: 8px;
   transition: 0.3s;
+  
   padding-bottom: 1.2rem;
   background-image: linear-gradient(
-    rgba(255, 255, 255, 0.05),
-    rgba(255, 255, 255, 0.05)
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0)
   );
   box-shadow: var(--shadow);
 }

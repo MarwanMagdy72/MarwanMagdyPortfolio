@@ -50,7 +50,7 @@ const NavBar = () => {
   };
 
   return (
-    <header className="d-flex align-items-center justify-content-evenly">
+    <header className= "  nav-header  d-flex align-items-center justify-content-evenly  ">
       <button
         onClick={() => {
           setShowModal(true);

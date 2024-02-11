@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./MainContent.css";
 import "./cardBorderAnimation.css";
 import { AnimatePresence, motion } from "framer-motion";
-import { projectsData } from "./projectsData";
+import { projectsData } from "../../Data/projectsData";
 import { Link } from "react-router-dom";
 
 const MainContent = () => {

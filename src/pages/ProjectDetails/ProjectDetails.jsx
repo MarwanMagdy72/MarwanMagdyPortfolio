@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { projectsData } from "../../components/MainContent/projectsData";
+import { projectsData } from "../../Data/projectsData";
 import AwesomeSlider from "react-awesome-slider";
 import "./ProjectDetails.css";
 

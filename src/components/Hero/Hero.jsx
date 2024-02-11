@@ -14,17 +14,11 @@ const Hero = () => {
           />
 
           <h1 className="w-100 text-start  mt-4 title">
-            Front-end Developer Using React.js & Next.js
+            Frontend Developer <br /> Using React.js & Next.js
           </h1>
 
           <p className="subtitle  text-start">
-            I'm Marwan Magdy, a Junior{" "}
-            <b>Frontend Developer with expertise in React.js </b> , dedicated to
-            crafting responsive and scalable interfaces. My hands-on experience
-            and commitment to high-quality code align with your team's goals.
-            Excited about the opportunity to discuss how I can contribute to
-            your dynamic projects.
-          </p>
+          I'm Marwan Magdy, <strong>a Junior Frontend Developer specializing in React.js.</strong> I leverage my expertise to craft interfaces that are not only responsive but also scalable. With a steadfast commitment to delivering high-quality code, I seamlessly align with your team's goals, poised to contribute to dynamic projects.          </p>
 
           <ul className="social-links   d-flex   gap-5">
             <li>
@@ -60,7 +54,7 @@ const Hero = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fa-brands fa-google"></i>
+                <i className="fas fa-envelope "></i>
               </a>
             </li>
             <li>

@@ -122,6 +122,13 @@ section form .form-content button:hover {
   scale: 1.05;
 }
 
+section form .form-content .success-message{
+  color: var(--title-color);
+}
+ form .success-animation{
+  width: 11%!important;
+}
+
 /*
 
 ====================
@@ -152,4 +159,10 @@ section form .form-content button:hover {
   section.contact-section {
     padding: 0px 0px;
   }
+}
+@media (max-width: 600px) {
+
+ form .success-message{
+  font-size: 1.1rem;
+}
 }

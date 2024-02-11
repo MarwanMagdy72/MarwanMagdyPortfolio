@@ -15,6 +15,7 @@ footer .social-icons .link:hover {
 footer a {
   color: var(--subtitle);
   text-decoration: underline !important;
+
 }
 
 footer h5 {
@@ -26,16 +27,15 @@ footer .contact-information p{
 
 footer .footer-useful-links a {
   transition: 0.3s all;
-  margin-block: 0.2rem;
-}
 
+}
+footer .footer-useful-links{
+  margin-block: 0.3rem ;
+}
 footer .bottom-footer{
   color: var(--title-color);
 }
 
-footer .footer-useful-links a:hover {
-  margin-left: 0.5rem;
-}
 
 @media (max-width: 430px) {
   footer .contact-information p,
