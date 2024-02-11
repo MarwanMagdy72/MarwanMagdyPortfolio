@@ -79,7 +79,7 @@ const NavBar = () => {
        
           <li>
             <a
-              href="https://drive.google.com/file/d/14Gh7nrz1qO9yH7Zehmh4gR9DpYDo5q7E/view"
+              href="https://drive.google.com/file/d/1pc_xmXIxgMbo3qaRGqKV0gZPhx0zIK50/view?usp=drive_link"
               target="_blank"
               rel="noopener noreferrer"
               
@@ -134,7 +134,7 @@ const NavBar = () => {
            
             <li>
               <a
-                href="https://drive.google.com/file/d/14Gh7nrz1qO9yH7Zehmh4gR9DpYDo5q7E/view"
+                href="https://drive.google.com/file/d/1pc_xmXIxgMbo3qaRGqKV0gZPhx0zIK50/view?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={closeModal}
