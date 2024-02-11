@@ -1,8 +1,24 @@
-# React + Vite
+#My Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a personal portfolio website built using React.js, Bootstrap, and Lottie animation files. It showcases projects, skills, and contact information.
 
-Currently, two official plugins are available:
+## Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Check out the live demo [Demo](https://marwanmagdyportfolio.onrender.com/).
+
+
+## Features
+
+- **Home Page:** Introduces the portfolio owner and provides links to other sections.
+- **Projects:** Displays a list of showcased projects with details and links.
+- **Skills:** Showcases the skills and technologies the portfolio owner possesses.
+- **Contact:** Provides contact information for the portfolio owner.
+- **Project Details:** Provides detailed information about each project, including description, technologies used, and links.
+
+## Technologies Used
+
+- React.js: Frontend library for building user interfaces.
+- Bootstrap: CSS framework for responsive and mobile-first web development.
+- Lottie: Library for adding lightweight, scalable animations to the website.
+
+
