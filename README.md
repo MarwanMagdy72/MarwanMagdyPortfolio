@@ -1,4 +1,4 @@
-#My Portfolio
+## My Portfolio
 
 This is a personal portfolio website built using React.js, Bootstrap, and Lottie animation files. It showcases projects, skills, and contact information.
 
