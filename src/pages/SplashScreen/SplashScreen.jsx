@@ -6,7 +6,7 @@ function SplashScreen() {
   return (
     <div className='splash-screen'>
 
-        <Lottie animationData={rocket}/>
+        <Lottie  animationData={rocket}/>
     </div>
   )
 }

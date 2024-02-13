@@ -1,10 +1,11 @@
 .splash-screen{
     background-color: rgb(72, 75, 75);
     height: 100vh;
+    
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     background-image: url(/public/splash.gif) ;
     background-size: cover;
     width: 100% !important;
-}
+} 

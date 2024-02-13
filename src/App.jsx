@@ -34,12 +34,23 @@ function App() {
   const [showSplash, setShowSplash] = useState(true);
 
   useEffect(() => {
-    // Hide splash screen after 2 seconds
-    const timeout = setTimeout(() => {
-      setShowSplash(false);
-    }, 3500);
+    // Check if user has visited home page before
+    const hasVisitedHomePage = localStorage.getItem("visitedHomePage");
 
-    return () => clearTimeout(timeout);
+    // If user has visited home page before, do not show splash screen
+    if (hasVisitedHomePage) {
+      setShowSplash(false);
+    } else {
+      // If it's the first time, set visitedHomePage to true in local storage
+      localStorage.setItem("visitedHomePage", "true");
+
+      // Hide splash screen after 3.5 seconds
+      const timeout = setTimeout(() => {
+        setShowSplash(false);
+      }, 3500);
+
+      return () => clearTimeout(timeout);
+    }
   }, []);
 
   useEffect(() => {
@@ -61,52 +72,47 @@ function App() {
 
   return (
     <>
+      {showSplash && (
+        <SplashScreen />
+      )}
 
-    {showSplash? <SplashScreen/>:
-    
       <div className="container app">
-        
-         
-     
-          <Router>
-            <ScrollToTop />
-            <NavBar />
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/skills" element={<Skills />} />
-              <Route path="/projects" element={<Projects />} />
-              <Route path="/contact" element={<ContactPage />} />
-              <Route path="*" element={<NotFound />} />
-              <Route
-                path="/projectDetails/:projectId"
-                element={<ProjectDetails />}
-              />
-            </Routes>
-            <Footer />
+        <Router>
+          <ScrollToTop />
+          <NavBar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/skills" element={<Skills />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/contact" element={<ContactPage />} />
+            <Route path="*" element={<NotFound />} />
+            <Route
+              path="/projectDetails/:projectId"
+              element={<ProjectDetails />}
+            />
+          </Routes>
+          <Footer />
 
-            <div className="fixed-icons d-flex flex-column align-items-center justify-content-center">
-              <div className="whatsapp-icon">
-                <a
-                  href="https://wa.me/1559559573"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Lottie animationData={whatsappIcon} />
-                </a>
-              </div>
-              <button
-                onClick={scrollToTopBtn}
-                style={{ display: scrollTopButton ? "block" : "none" }}
-                className="scroll-to-top-btn"
+          <div className="fixed-icons d-flex flex-column align-items-center justify-content-center">
+            <div className="whatsapp-icon">
+              <a
+                href="https://wa.me/1559559573"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <Lottie animationData={arrowAnimation} />
-              </button>
+                <Lottie animationData={whatsappIcon} />
+              </a>
             </div>
-          </Router>
-        
+            <button
+              onClick={scrollToTopBtn}
+              style={{ display: scrollTopButton ? "block" : "none" }}
+              className="scroll-to-top-btn"
+            >
+              <Lottie animationData={arrowAnimation} />
+            </button>
+          </div>
+        </Router>
       </div>
-    }
-
     </>
   );
 }
