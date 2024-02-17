@@ -1,5 +1,72 @@
 export const projectsData = [
   {
+    projectId: 10,
+    projectTitle: "Chat Application",
+    projectSubtitle: "Project under construction. 🚧",
+    projectCategory: "ReactJs",
+    projectIcon: "fa-solid fa-toolbox",
+    coverImage: "/projectsImages/React/chat-app/Under Construction.png",
+    gitHubLink: "https://syrte.obspm.fr/taiol/Underconstruction.html",
+    demoLink: "https://syrte.obspm.fr/taiol/Underconstruction.html",
+    projectDetails: "",
+    projectImages: ["/projectsImages/React/chat-app/Under Construction.png"],
+    // projectPages: [
+    //   {
+    //     title: "Dashboard",
+    //     description: "The main overview page with key metrics and insights.",
+    //   },
+    //   {
+    //     title: "Calendar",
+    //     description: "Manage your schedule and events seamlessly.",
+    //   },
+    //   {
+    //     title: "Bar Chart Page",
+    //     description: "Dive into categorical data analysis.",
+    //   },
+    //   {
+    //     title: "Line Chart Page",
+    //     description: "Track trends and analyze data over time.",
+    //   },
+    //   {
+    //     title: "Geographic Chart Page",
+    //     description: "Explore geographical data with interactive maps.",
+    //   },
+    //   {
+    //     title: "Radial Chart Page",
+    //     description:
+    //       "Present data in a circular format for a unique perspective.",
+    //   },
+    //   {
+    //     title: "Form Page",
+    //     description: "Collect and submit data through a user-friendly form.",
+    //   },
+    //   {
+    //     title: "Invoices Page",
+    //     description: "Manage and track financial transactions effortlessly.",
+    //   },
+    //   {
+    //     title: "Team Page",
+    //     description: "View and organize team information efficiently.",
+    //   },
+    //   {
+    //     title: "FAQ Page",
+    //     description: "Answers to commonly asked questions for user support.",
+    //   },
+    // ],
+
+    Technologies: [
+      {
+        tech: "NextJS 14",
+      },
+      {
+        tech: "Firebase",
+      },
+      {
+        tech: "Tailwind css",
+      },
+    ],
+  },
+  {
     projectId: 1,
     projectTitle: "Admin Dashboard",
     projectSubtitle:

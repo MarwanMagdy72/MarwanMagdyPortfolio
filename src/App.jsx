@@ -18,7 +18,6 @@ import whatsappIcon from "../public/animation/whatsapp.json";
 import NotFound from "./pages/NotFound/NotFound";
 import SplashScreen from "./pages/SplashScreen/SplashScreen";
 
-// Handle scroll to top of page when path changes
 function ScrollToTop() {
   const { pathname } = useLocation();
 
@@ -34,33 +33,25 @@ function App() {
   const [showSplash, setShowSplash] = useState(true);
 
   useEffect(() => {
-    // Check if user has visited home page before
-    const hasVisitedHomePage = localStorage.getItem("visitedHomePage");
-
-    // If user has visited home page before, do not show splash screen
-    if (hasVisitedHomePage) {
+    const timeout = setTimeout(() => {
       setShowSplash(false);
-    } else {
-      // If it's the first time, set visitedHomePage to true in local storage
-      localStorage.setItem("visitedHomePage", "true");
+    }, 3000);
 
-      // Hide splash screen after 3.5 seconds
-      const timeout = setTimeout(() => {
-        setShowSplash(false);
-      }, 3500);
-
-      return () => clearTimeout(timeout);
-    }
+    return () => clearTimeout(timeout);
   }, []);
 
   useEffect(() => {
-    window.addEventListener("scroll", () => {
+    const handleScroll = () => {
       if (window.scrollY > 600) {
         setScrollTopButton(true);
       } else {
         setScrollTopButton(false);
       }
-    });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const scrollToTopBtn = () => {
@@ -72,10 +63,10 @@ function App() {
 
   return (
     <>
-      {showSplash && (
-        <SplashScreen />
-      )}
-
+      {showSplash ? <SplashScreen /> :
+      
+      
+      
       <div className="container app">
         <Router>
           <ScrollToTop />
@@ -92,7 +83,6 @@ function App() {
             />
           </Routes>
           <Footer />
-
           <div className="fixed-icons d-flex flex-column align-items-center justify-content-center">
             <div className="whatsapp-icon">
               <a
@@ -113,6 +103,7 @@ function App() {
           </div>
         </Router>
       </div>
+      } 
     </>
   );
 }
