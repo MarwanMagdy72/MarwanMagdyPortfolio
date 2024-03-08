@@ -63,9 +63,9 @@ const ProjectDetails = () => {
             <h3>
               <i className="fa-solid fa-puzzle-piece"></i> Project Sections
             </h3>
-          ) : (
-            <h1>Project under construction.🚧</h1>
-          )}
+          ) : project.projectUnderConstruction?(
+            <h1>Project under construction.🚧</h1> 
+          ): ''}
 
           {/* List of Project Pages or Sections */}
           {project.projectPages ? (

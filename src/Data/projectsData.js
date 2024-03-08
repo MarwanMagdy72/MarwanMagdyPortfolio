@@ -2,67 +2,36 @@ export const projectsData = [
   {
     projectId: 10,
     projectTitle: "Chat Application",
-    projectSubtitle: "Project under construction. 🚧",
+    projectSubtitle: "Full Stack Chat Application built using Next.js, Firebase (Auth, Firestore Database, Firebase Storage), Tailwind CSS, and Flowbite React.",
     projectCategory: "ReactJs",
     projectIcon: "fa-solid fa-toolbox",
-    coverImage: "/projectsImages/React/chat-app/Under Construction.png",
-    gitHubLink: "https://syrte.obspm.fr/taiol/Underconstruction.html",
-    demoLink: "https://syrte.obspm.fr/taiol/Underconstruction.html",
-    projectDetails: "",
-    projectImages: ["/projectsImages/React/chat-app/Under Construction.png"],
-    // projectPages: [
-    //   {
-    //     title: "Dashboard",
-    //     description: "The main overview page with key metrics and insights.",
-    //   },
-    //   {
-    //     title: "Calendar",
-    //     description: "Manage your schedule and events seamlessly.",
-    //   },
-    //   {
-    //     title: "Bar Chart Page",
-    //     description: "Dive into categorical data analysis.",
-    //   },
-    //   {
-    //     title: "Line Chart Page",
-    //     description: "Track trends and analyze data over time.",
-    //   },
-    //   {
-    //     title: "Geographic Chart Page",
-    //     description: "Explore geographical data with interactive maps.",
-    //   },
-    //   {
-    //     title: "Radial Chart Page",
-    //     description:
-    //       "Present data in a circular format for a unique perspective.",
-    //   },
-    //   {
-    //     title: "Form Page",
-    //     description: "Collect and submit data through a user-friendly form.",
-    //   },
-    //   {
-    //     title: "Invoices Page",
-    //     description: "Manage and track financial transactions effortlessly.",
-    //   },
-    //   {
-    //     title: "Team Page",
-    //     description: "View and organize team information efficiently.",
-    //   },
-    //   {
-    //     title: "FAQ Page",
-    //     description: "Answers to commonly asked questions for user support.",
-    //   },
-    // ],
+    coverImage:  "/projectsImages/React/chat-app/1.png",
+    gitHubLink: "https://github.com/MarwanMagdy72/chat-app",
+    demoLink: "https://chat-app-rho-five-47.vercel.app/",
+    projectDetails: " This full stack chat application enables real-time communication between users through text messages, emojis, and images. Using Next.js, Firebase (Auth, Firestore Database, Firebase Storage), Tailwind CSS, and Flowbite React, users can register securely, add contacts, and engage in chat sessions. With features like real-time updates and image sharing, the app offers a seamless and expressive chatting experience, fostering connections and collaboration among users.",
+    projectImages: [
+      "/projectsImages/React/chat-app/1.png",
+      "/projectsImages/React/chat-app/2.png",
+      "/projectsImages/React/chat-app/3.png",
+      "/projectsImages/React/chat-app/4.jpg",
+      "/projectsImages/React/chat-app/5.jpg",
+      "/projectsImages/React/chat-app/6.jpg",
+  
+  ],
+
 
     Technologies: [
       {
         tech: "NextJS 14",
       },
       {
-        tech: "Firebase",
+        tech: "Firebase (Authentication, Firestore Database, Storage)",
       },
       {
         tech: "Tailwind css",
+      },
+      {
+        tech: "Flowbite React",
       },
     ],
   },
