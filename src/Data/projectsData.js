@@ -36,6 +36,88 @@ export const projectsData = [
     ],
   },
   {
+    projectId: 11,
+    projectTitle: "e-commerce app",
+    projectSubtitle: "This Next.js frontend project is a comprehensive e-commerce platform featuring robust user authentication, seamless API integration, Stripe payment gateway, and dynamic order management. It offers a smooth and secure shopping experience with a wide array of functionalities.",
+    projectCategory: "ReactJs",
+    projectIcon: "fa-solid fa-cart-shopping",
+    coverImage:  "/projectsImages/React/Next-ecommerce/4.png",
+    gitHubLink: "https://github.com/MarwanMagdy72/NextJs-ecommerce",
+    demoLink: "https://next-js-ecommerce-nu.vercel.app/",
+    projectDetails: " This project is a comprehensive Next.js frontend application crafted to provide users with an immersive e-commerce experience. It features robust user authentication mechanisms for secure account management, seamless API integration for smooth data exchange with the backend, and a versatile Stripe payment gateway for secure transactions. The platform also includes an intuitive shopping cart system with CRUD operations, allowing users to efficiently manage their selections. Additionally, dynamic order management functionality enables users to track their purchase history and monitor current order statuses with ease. With a focus on user-friendly design and cutting-edge technology, this project aims to deliver a seamless and enjoyable shopping journey for customers.",
+    projectImages: [
+      "/projectsImages/React/Next-ecommerce/1.png",
+      "/projectsImages/React/Next-ecommerce/2.png",
+      "/projectsImages/React/Next-ecommerce/3.png",
+      "/projectsImages/React/Next-ecommerce/4.png",
+      "/projectsImages/React/Next-ecommerce/5.png",
+      "/projectsImages/React/Next-ecommerce/6.png",
+  
+  ],
+
+
+  projectPages: [
+    {
+      title: "Home",
+      description:
+        "The main landing page of the website, showcasing the project's features and inviting visitors to explore further.",
+    },
+    {
+      title: "Products",
+      description: "Allows users to browse all products",
+    },
+    {
+      title: "Shopping Cart",
+      description:
+        "Enables users to manage their shopping cart with CRUD operations, ensuring a smooth shopping experience.",
+    },
+    {
+      title: "Products Details",
+      description:
+        "Allows users to view detailed information about each product , and add items to a cart for a personalized shopping experience.",
+    },
+    {
+      title: "Order Details",
+      description:
+        "Allows users to view his order details like (price, quantity and shipping methods)",
+    },
+    {
+      title: "User Authentication",
+      description:
+        "Provides secure authentication for user accounts, including features like sign up, login, and password reset via Gmail.",
+    },
+
+    {
+      title: "Stripe Payment Gateway",
+      description:
+        "Integrates the Stripe payment gateway for secure online transactions, with a test mode available for confidence building.",
+    },
+  ],
+  keyFeatures: [
+    {
+      feature: "Secure User Authentication",
+    },
+    {
+      feature: "API Integration",
+    },
+    {
+      feature: "Stripe Payment Gateway",
+    },
+    {
+      feature: "Dynamic Order Management",
+    },
+    {
+      feature: "CRUD Operations in Shopping Cart",
+    },
+    {
+      feature: "Context API for State Management",
+    },
+    {
+      feature: "User-Friendly Design",
+    },
+  ],
+  },
+  {
     projectId: 1,
     projectTitle: "Admin Dashboard",
     projectSubtitle:
