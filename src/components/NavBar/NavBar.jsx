@@ -134,7 +134,7 @@ const NavBar = () => {
            
             <li>
               <a
-                href="https://drive.google.com/file/d/1BpAVid2KM3W1csqePZD-Ml0Jistfn7XP/view?usp=drive_link"
+                href="https://flowcv.com/resume/6mdl0ariwp"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={closeModal}

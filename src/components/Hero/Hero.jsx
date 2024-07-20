@@ -8,7 +8,7 @@ const Hero = () => {
       <div className="row hero-section mt-5">
         <div className="col-md-7  hero-info  d-flex flex-column ">
           <img
-            src="/profileImage.png"
+            src="/profileImage2.png"
             className="profile-image "
             alt="Profile-Image"
           />
