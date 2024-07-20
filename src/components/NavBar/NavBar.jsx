@@ -79,7 +79,7 @@ const NavBar = () => {
        
           <li>
             <a
-              href="https://drive.google.com/file/d/1pc_xmXIxgMbo3qaRGqKV0gZPhx0zIK50/view?usp=drive_link"
+              href="https://flowcv.com/resume/6mdl0ariwp"
               target="_blank"
               rel="noopener noreferrer"
               
